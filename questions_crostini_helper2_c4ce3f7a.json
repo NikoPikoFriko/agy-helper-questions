@@ -1,0 +1,43 @@
+{
+  "schema": "agy-helper-public-questions/v1",
+  "published_at_utc": "2026-11-17T08:21:00Z",
+  "lane": "crostini",
+  "helper_short_id": "6434504e",
+  "bound_orchestrator_short_id": "c4ce3f7a",
+  "expected_nonce_prefix": "cf4ba618",
+  "target_repo": "harmonic-ops-machine/agy-session-index",
+  "status": "AWAITING_ORCHESTRATOR_AUTH_AND_ANSWERS",
+  "zero_pii_verified": true,
+  "staged_deploy_key": {
+    "title": "agy-crostini-helper2",
+    "fingerprint_sha256": "SHA256:8ZL7ElUm7qCh6eiiacLr5tCcOJLHeMPONQQxOxgCU0c",
+    "public_key": "ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIOqZkHP6jX6OTMPXTBZeesDF0qHhxGhfuntH+lrJKA3j agy-crostini-helper2"
+  },
+  "questions": [
+    {
+      "id": "Q1",
+      "blocking": true,
+      "topic": "Auth mode for harmonic-ops-machine/agy-session-index + crostini_github_wakeup.py",
+      "options": [
+        "1A: Secondary gh login for harmonic-ops-machine on Crostini (Zero-PII + owner --auto-webhook)",
+        "1B: Collaborator invite for NikoPikoFriko (Git + REST ETag, no owner webhook)",
+        "1C: Repo-scoped SSH deploy key agy-crostini-helper2 (Git-only transport)"
+      ]
+    },
+    {
+      "id": "Q2",
+      "blocking": false,
+      "topic": "Handling absent ~/.claude and ~/.codex roots in agy_index scan --roots"
+    },
+    {
+      "id": "Q3",
+      "blocking": false,
+      "topic": "Graceful skip of gsheets sync-sheets inside headless systemd --user ticks"
+    },
+    {
+      "id": "Q4",
+      "blocking": false,
+      "topic": "Side-by-side operation of 5m scan timer + crostini_github_wakeup.py with [crostini-self] [skip wake] + --record-own-sha"
+    }
+  ]
+}
